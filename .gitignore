@@ -2760,4 +2760,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/SupBabe/YBAHOPPER/mai
 elseif game.PlaceId == 4042427666 then
 getgenv().messagebox = function() end
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AokijiFlame/AFS/main/AnimeFightingSim"))()
+elseif game.PlaceId == 6951762614 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/main/UFO%20Simulator/UFOSimulatorGUI"))()
+
 end
