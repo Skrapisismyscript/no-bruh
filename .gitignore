@@ -2757,4 +2757,7 @@ getgenv().Farming = {
 }
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/SupBabe/YBAHOPPER/main/YBAHOP.lua'))()
+elseif game.PlaceId == 4042427666 then
+getgenv().messagebox = function() end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AokijiFlame/AFS/main/AnimeFightingSim"))()
 end
