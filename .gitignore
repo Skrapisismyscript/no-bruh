@@ -2737,11 +2737,11 @@ getgenv().webhook = "" -- leave both empty if you don't want webhook ( otherwise
 getgenv().DiscordID = ""
 -- change to true to collect items you want to farm
 getgenv().Farming = {
-    ["Mysterious Arrow"] = true;
-    ["Rokakaka"] = true; 
+    ["Mysterious Arrow"] = false;
+    ["Rokakaka"] = false; 
     ["Pure Rokakaka"] = true; 
     ["Lucky Arrow"] = true; 
-    ["Rib Cage of The Saint's Corpse"] = true; 
+    ["Rib Cage of The Saint's Corpse"] = false; 
     ["Steel Ball"] = false;
     ["Zepellin's Headband"] = false; 
     ["Ancient Scroll"] = false; 
@@ -2750,10 +2750,10 @@ getgenv().Farming = {
     ["Gold Coin"] = false;
     ["Diamond"] = false;
     ["DEO's Diary"] = false;
-    ["Red Candy"] = true;
-    ["Green Candy"] = true;
-    ["Blue Candy"] = true;
-    ["Yellow Candy"] = true;
+    ["Red Candy"] = false;
+    ["Green Candy"] = false;
+    ["Blue Candy"] = false;
+    ["Yellow Candy"] = false;
 }
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/SupBabe/YBAHOPPER/main/YBAHOP.lua'))()
