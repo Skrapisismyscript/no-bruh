@@ -6,7 +6,7 @@ local Window = Library.CreateLib("Skrapis", "Midnight")
 local Tab = Window:NewTab("Skrapis Universal")
 local Section = Tab:NewSection("Universal Stuff")
 Section:NewLabel("Get Your Universal Scripts Here!")
-Section:NewButton("Reset Character", "Kills you're character so you respawn!", function()
+Section:NewButton("Reset Character", "Kills you're character so you re!", function()
     print("Killing yourself")
     game.Players.LocalPlayer.Character.Humanoid.Health = 0
 end)
@@ -2764,5 +2764,173 @@ elseif game.PlaceId == 6951762614 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/main/UFO%20Simulator/UFOSimulatorGUI"))()
 elseif game.PlaceId == 7733392089 then
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/pspboy08/dollhouse/main/LuoBuTN.lua')))()
+elseif game.PlaceId == 3177438863 then
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local rengoku = Instance.new("ImageLabel")
+local open = Instance.new("TextButton")
+local close = Instance.new("TextButton")
+local skrapis = Instance.new("TextLabel")
+local example4 = Instance.new("TextButton")
+local example1 = Instance.new("TextButton")
+local example3 = Instance.new("TextButton")
+local example2 = Instance.new("TextButton")
+local example5 = Instance.new("TextButton")
+
+
+ScreenGui.Parent = game.CoreGui
+
+rengoku.Name = "rengoku"
+rengoku.Parent = ScreenGui
+rengoku.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+rengoku.Position = UDim2.new(0.22334455, 0, 0.0557103083, 0)
+rengoku.Size = UDim2.new(0, 546, 0, 332)
+rengoku.Image = "http://www.roblox.com/asset/?id=4406417726"
+
+
+
+close.Name = "close"
+close.Parent = rengoku
+close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+close.Position = UDim2.new(0.913426101, 0, 0.911131978, 0)
+close.Size = UDim2.new(0, 47, 0, 29)
+close.Font = Enum.Font.SourceSans
+close.Text = "Close :("
+close.TextColor3 = Color3.fromRGB(0, 0, 0)
+close.TextSize = 14.000
+
+skrapis.Name = "skrapis"
+skrapis.Parent = rengoku
+skrapis.BackgroundColor3 = Color3.fromRGB(172, 0, 0)
+skrapis.Position = UDim2.new(-9.86754894e-05, 0, -0.013566792, 0)
+skrapis.Size = UDim2.new(0, 546, 0, 29)
+skrapis.Font = Enum.Font.SourceSans
+skrapis.Text = "Skrapis"
+skrapis.TextColor3 = Color3.fromRGB(0, 0, 0)
+skrapis.TextScaled = true
+skrapis.TextSize = 14.000
+skrapis.TextWrapped = true
+
+example4.Name = "example4"
+example4.Parent = rengoku
+example4.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+example4.Position = UDim2.new(-0.000986679108, 0, 0.444851786, 0)
+example4.Size = UDim2.new(0, 168, 0, 23)
+example4.Font = Enum.Font.SourceSans
+example4.Text = "Go TO quest"
+example4.TextColor3 = Color3.fromRGB(0, 0, 0)
+example4.TextSize = 14.000
+
+example1.Name = "example1"
+example1.Parent = rengoku
+example1.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+example1.Position = UDim2.new(-0.000986679108, 0, 0.0713578761, 0)
+example1.Size = UDim2.new(0, 169, 0, 23)
+example1.Font = Enum.Font.SourceSans
+example1.Text = "Auto punch"
+example1.TextColor3 = Color3.fromRGB(0, 0, 0)
+example1.TextSize = 14.000
+
+example3.Name = "example3"
+example3.Parent = rengoku
+example3.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+example3.Position = UDim2.new(-0.000986679108, 0, 0.321357816, 0)
+example3.Size = UDim2.new(0, 168, 0, 23)
+example3.Font = Enum.Font.SourceSans
+example3.Text = "Get every gamepass"
+example3.TextColor3 = Color3.fromRGB(0, 0, 0)
+example3.TextSize = 14.000
+
+example2.Name = "example2"
+example2.Parent = rengoku
+example2.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+example2.Position = UDim2.new(-0.000986679457, 0, 0.17979157, 0)
+example2.Size = UDim2.new(0, 169, 0, 23)
+example2.Font = Enum.Font.SourceSans
+example2.Text = "anti-afk bro"
+example2.TextColor3 = Color3.fromRGB(0, 0, 0)
+example2.TextSize = 14.000
+
+example5.Name = "example5"
+example5.Parent = rengoku
+example5.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+example5.Position = UDim2.new(-0.00122100115, 0, 0.566885889, 0)
+example5.Size = UDim2.new(0, 169, 0, 21)
+example5.Font = Enum.Font.SourceSans
+example5.Text = "Teleport to TIME CHAMBER"
+example5.TextColor3 = Color3.fromRGB(0, 0, 0)
+example5.TextSize = 14.000
+example1.MouseButton1Down:connect(function()
+    _G.lol = true
+if _G.lol == true then
+    while wait() do
+
+local ohString1 = "Combat"
+local ohBoolean2 = true
+local ohCFrame3 = CFrame.new(5610.82031, 141.765427, -1683.73425, -0.350193352, -0.106537476, 0.930598915, 3.7252903e-09, 0.993510544, 0.113739766, -0.936677456, 0.0398309119, -0.347920775)
+local ohCFrame4 = CFrame.new(5592.44141, 138.039078, -1676.86255, 0.771633863, -0.000280768058, -0.636066914, 0.000313901808, 0.99999994, -6.06086942e-05, 0.636067152, -0.00015289447, 0.771633863)
+local ohCFrame5 = CFrame.new(5345.94727, 164.547668, -1530.94873, -0.499694169, 0.0643573627, 0.863807857, -0, 0.997236133, -0.0742983371, -0.866201878, -0.0371264443, -0.498313099)
+local ohNil6 = nil
+local ohInstance7 = workspace["World Map"]["Multiplier Zones"]["Floating Palace"]["Time Chamber"].Infinity.Part
+local ohTable8 = {
+	["Type"] = 0
+}
+
+game:GetService("ReplicatedStorage").Remotes.SkillRemote:FireServer(ohString1, ohBoolean2, ohCFrame3, ohCFrame4, ohCFrame5, ohNil6, ohInstance7, ohTable8)
+
+local ohString1 = "Combat"
+local ohBoolean2 = false
+local ohCFrame3 = CFrame.new(1932.04517, 572.215698, 1239.80542, 1, 0, 0, 0, 0.965926468, 0.258817017, 0, -0.258817017, 0.965926468)
+local ohCFrame4 = CFrame.new(1932.04517, 568.751465, 1232.40002, -0.809961736, 3.56339491e-08, 0.586482763, -1.40585339e-08, 1, -8.01742672e-08, -0.586482763, -7.31831733e-08, -0.809961736)
+local ohCFrame5 = CFrame.new(1921.25244, 565.871887, 1228.67725, 0.717840433, -0.263691008, 0.644338548, -0, 0.925497651, 0.378753394, -0.696207643, -0.271884501, 0.664359689)
+local ohNil6 = nil
+local ohInstance7 = workspace["World Map"].Islands["Kame Island"].Island.Model.Land.Wedge
+local ohTable8 = {
+	["Hit"] = {},
+	["Type"] = 1
+}
+
+game:GetService("ReplicatedStorage").Remotes.SkillRemote:FireServer(ohString1, ohBoolean2, ohCFrame3, ohCFrame4, ohCFrame5, ohNil6, ohInstance7, ohTable8)
+end
+end
+end)
+
+example2.MouseButton1Down:connect(function()
+local VirtualUser=game:service'VirtualUser'
+game:service'Players'.LocalPlayer.Idled:connect(function()
+VirtualUser:CaptureController()
+VirtualUser:ClickButton2(Vector2.new())
+end)
+
+warn("Anti-Afk has Loaded")
+end)
+example3.MouseButton1Down:connect(function()
+game.Players.LocalPlayer:Kick("You have been banned #NoExploiting!                         jk you haven't been banned it's a joke lol")
+wait(2)
+game:GetService("TeleportService"):Teleport(3177438863, game.Players.LocalPlayer)
+end)
+example4.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace")["World Map"].Islands["Kame Island"].Island.Path.a.CFrame
+end)
+
+example5.MouseButton1Down:connect(function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace")["World Map"]["Multiplier Zones"]["Floating Palace"]["Time Chamber"].Infinity.Part.CFrame 
+end)
+close.MouseButton1Down:connect(function()
+skrapis.Visible = false
+example1.Visible = false
+example2.Visible = false
+example3.Visible = false
+example4.Visible = false
+example5.Visible = false
+rengoku.Visible = false
+close.Visible = false
+
+
+end)
+
+
+
 
 end
