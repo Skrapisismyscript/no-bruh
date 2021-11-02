@@ -178,3 +178,28 @@ local ExampleSection = Ui:CreateSection("Clone Tycoon 2")
 ExampleSection:CreateButton("BestGui(CloneTycoon2)", function()
     task.spawn(loadstring(game:HttpGet("https://paste.ee/r/N0fo7/0")),[[also if it doesn't load look in the console for some warns / errors]])
 end)
+local ExampleSection = Ui:CreateSection("slayer tycoon")
+ExampleSection:CreateButton("slayer tycoon script", function()
+    shared.Enabled = true
+
+local plr = game.Players.LocalPlayer
+local char = plr.Character
+local hatchet = plr.Backpack.Hatchet or char.Hatchet
+
+
+for i,v in pairs(workspace.Map:GetChildren())do
+   if v:FindFirstChild("WoodHitPart") and v.Leaves.Transparency == 0 and shared.Enabled then
+       repeat wait()
+           char.Humanoid:EquipTool(hatchet)
+           wait()
+           hatchet:Activate()
+           char:SetPrimaryPartCFrame(v.WoodHitPart.CFrame)
+       until v.Leaves.Transparency == 1
+   end
+end
+end)
+
+local ExampleSection = Ui:CreateSection("phantom forces")
+ExampleSection:CreateButton("phantomforces gui", function()
+    loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
+end)
