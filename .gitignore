@@ -2777,6 +2777,7 @@ local example1 = Instance.new("TextButton")
 local example3 = Instance.new("TextButton")
 local example2 = Instance.new("TextButton")
 local example5 = Instance.new("TextButton")
+rengoku.Draggable = true
 
 
 ScreenGui.Parent = game.CoreGui
