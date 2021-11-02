@@ -203,3 +203,8 @@ local ExampleSection = Ui:CreateSection("phantom forces")
 ExampleSection:CreateButton("phantomforces gui", function()
     loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
 end)
+
+local ExampleSection = Ui:CreateSection("Shindo life")
+ExampleSection:CreateButton("SolarisHub(shindolife)", function()
+    loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
+end)
