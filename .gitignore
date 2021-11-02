@@ -2498,3 +2498,48 @@ Page.Button({
     end
 })
 
+local Page = UI.New({
+    Title = "Toys trading"
+})
+
+Page.Button({
+    Text = "unlimited items (will freeze for a bit)",
+    Callback = function()
+        for i = 10000,30200,1 do
+            local ohString1 = "Stock"
+            local ohString2 = i
+            local ohNumber3 = 100
+            
+            game:GetService("ReplicatedStorage").Events.Equipment.EquipmentRE:FireServer(ohString1, ohString2, ohNumber3)
+            end
+    end
+})
+
+    local Page = UI.New({
+        Title = "Vehicle simulator"
+    })
+
+    Page.Button({
+        Text = "Vehicle simulator gui",
+        Callback = function()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/littlegui/main/VehicleSimulator'))()
+        end
+    })
+
+    local Page = UI.New({
+        Title = "anime fighters"
+    })
+
+    Page.Button({
+        Text = "KJ HUB ( for free gamepass)",
+        Callback = function()
+            loadstring(game.HttpGet(game, "https://raw.githubusercontent.com/KiJinGaming/FreeScript/main/KJHub.lua"))();
+        end
+    })
+    Page.Button({
+        Text = "shrawu script (for farming in same place)",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Nivyd/ShrawuRepost/main/Shrawu.lua", true))()
+        end
+    })
+    
