@@ -2828,7 +2828,7 @@ example1.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
 example1.Position = UDim2.new(-0.000986679108, 0, 0.0713578761, 0)
 example1.Size = UDim2.new(0, 169, 0, 23)
 example1.Font = Enum.Font.SourceSans
-example1.Text = "Auto punch"
+example1.Text = "Auto punch and auto rebirth"
 example1.TextColor3 = Color3.fromRGB(0, 0, 0)
 example1.TextSize = 14.000
 
@@ -2892,6 +2892,12 @@ local ohTable8 = {
 }
 
 game:GetService("ReplicatedStorage").Remotes.SkillRemote:FireServer(ohString1, ohBoolean2, ohCFrame3, ohCFrame4, ohCFrame5, ohNil6, ohInstance7, ohTable8)
+game:GetService("ReplicatedStorage").Aero.AeroRemoteServices.StatsService.RebirthUp:FireServer()
+
+
+
+
+
 end
 end
 end)
@@ -2906,9 +2912,8 @@ end)
 warn("Anti-Afk has Loaded")
 end)
 example3.MouseButton1Down:connect(function()
-game.Players.LocalPlayer:Kick("You have been banned #NoExploiting!                         jk you haven't been banned it's a joke lol")
-wait(2)
-game:GetService("TeleportService"):Teleport(3177438863, game.Players.LocalPlayer)
+print"not done yet."
+
 end)
 example4.MouseButton1Down:connect(function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace")["World Map"].Islands["Kame Island"].Island.Path.a.CFrame
