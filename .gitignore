@@ -39,7 +39,7 @@ if is_synapse_function then
 					Body = game:GetService('HttpService'):JSONEncode({content = '**INVALID KEY BY  **' .. game:GetService("RbxAnalyticsService"):GetClientId() .. '  Is the Special ID of following UserId == ' .. game.Players.LocalPlayer.UserId ..'  key used is : ' .. txt}) -- text near a
 				}
 			);
-
+print("PS: The HWID scan doesnt work, but no stealing pls.")
 		end
 	end)
 elseif pebc_execute then 
