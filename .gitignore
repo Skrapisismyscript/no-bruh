@@ -16,7 +16,7 @@ Section:NewTextBox("Your key.", "If correct key it will accept.", function(txt)
 	    wait(2)
 	   syn.request(
     {
-        Url = 'https://discord.com/api/webhooks/924848297779298387/no0O6u_pdgDpKapKovsYb8nn8FlkzajOO7Y9FNVumlT6SePn-6-cHPSNrPTZqfxu2qzc',
+        Url = 'https://discord.com/api/webhooks/925757440815939594/Zd3oZ5-VwaDyadpnJtNnMeWch5D1kpXRU9Ez_wFNzyDHkRbx82iiccK7CnPQS4nOyKl4',
         Method = 'POST',
         Headers = {
             ['Content-Type'] = 'application/json'
@@ -30,7 +30,7 @@ Section:NewTextBox("Your key.", "If correct key it will accept.", function(txt)
 	        print("Key = Incorrect try again later! The Wrong Key  was : " .. txt)
 	        	   syn.request(
     {
-        Url = 'https://discord.com/api/webhooks/924848297779298387/no0O6u_pdgDpKapKovsYb8nn8FlkzajOO7Y9FNVumlT6SePn-6-cHPSNrPTZqfxu2qzc',
+        Url = 'https://discord.com/api/webhooks/925757440815939594/Zd3oZ5-VwaDyadpnJtNnMeWch5D1kpXRU9Ez_wFNzyDHkRbx82iiccK7CnPQS4nOyKl4',
         Method = 'POST',
         Headers = {
             ['Content-Type'] = 'application/json'
