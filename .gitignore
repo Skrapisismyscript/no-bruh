@@ -1,54 +1,33 @@
-if is_synapse_function then
-	local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-	local Window = Library.CreateLib("Premium key", "DarkTheme")
-	local Tab = Window:NewTab("Key System")
-	local Section = Tab:NewSection("Please Enter Your Key Below.")
-	local Section = Tab:NewSection("Click f9 to know the status.")
-
-
-	Section:NewTextBox("Your key.", "If correct key it will accept.", function(txt)
-		print(txt .. ": Typed in.. Checking if correct key.")
-		wait(2)
-		print("Checking Servers for key.")
-		wait(2)
-		if txt == "LOLLMAO" then
-			print("Key = Correct.. Loading Gui..")
-			print("Hi . . . Welcome to the script..")
-			wait(2)
-			syn.request(
-				{
-					Url = 'https://discord.com/api/webhooks/925758766765469696/tEs6K20CL50ASP1YYm86e07W6zHyf3iHwCUHfu5VWuxnhRqyvhWcW3z_yGf-S33YJ5Y0',
-					Method = 'POST',
-					Headers = {
-						['Content-Type'] = 'application/json'
-					},
-					Body = game:GetService('HttpService'):JSONEncode({content = game:GetService("RbxAnalyticsService"):GetClientId() .. '  Is the Special ID of following UserId == ' .. game.Players.LocalPlayer.UserId ..'  key used is : ' .. txt}) -- text near a
-				}
-			);
-			print("Loaded Gui.. Have fun.")
-			loadstring(game:HttpGet("https://pastebin.com/raw/znNTTFjk", true))()
-		else
-			print("Key = Incorrect try again later! The Wrong Key  was : " .. txt)
-			syn.request(
-				{
-					Url = 'https://discord.com/api/webhooks/925758766765469696/tEs6K20CL50ASP1YYm86e07W6zHyf3iHwCUHfu5VWuxnhRqyvhWcW3z_yGf-S33YJ5Y0',
-					Method = 'POST',
-					Headers = {
-						['Content-Type'] = 'application/json'
-					},
-					Body = game:GetService('HttpService'):JSONEncode({content = '**INVALID KEY BY  **' .. game:GetService("RbxAnalyticsService"):GetClientId() .. '  Is the Special ID of following UserId == ' .. game.Players.LocalPlayer.UserId ..'  key used is : ' .. txt}) -- text near a
-				}
-			);
-print("PS: The HWID scan doesnt work, but no stealing pls.")
-		end
-	end)
-elseif pebc_execute then 
-elseif is_sirhurt_closure then  
-elseif secure_load then  
-elseif KRNL_LOADED then 
-elseif shadow_env then  
-elseif IS_VIVA_LOADED then 
-elseif isvm then while true do end 
-elseif IS_COCO_LOADED then 
-elseif unit then while true do end 
+repeat wait() until game:IsLoaded()
+spawn (function()
+for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
+v:Disable()
 end
+end)
+spawn (function()
+if game.PlaceId == 2008032602 then
+while wait() do
+
+local args = {
+    [1] = true
+}
+
+game:GetService("ReplicatedStorage").Place:FireServer(unpack(args))
+end
+elseif game.PlaceId == 1458767429 then
+    spawn (function()
+    game:GetService("RunService").RenderStepped:Connect(function()
+        
+        game.Players.LocalPlayer.Character.Humanoid.Health = 0
+    end)
+    end)
+    spawn (function()
+        while wait(120) do
+            game:GetService("Teleport"):Teleport(2008032602, game.Players.LocalPlayer)
+        end
+    end)
+end
+
+end)
+
+    
