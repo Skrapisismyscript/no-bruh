@@ -23,6 +23,7 @@ elseif game.PlaceId == 1458767429 then
     end)
     spawn (function()
         game:GetSerivice("RunService").RenderStepped:Connect(function()
+        print("hi teleporter ready after match")
             wait(120)
             game:GetService("Teleport"):Teleport(2008032602, game.Players.LocalPlayer)
         end)
