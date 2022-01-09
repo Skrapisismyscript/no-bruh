@@ -28,7 +28,18 @@ elseif game.PlaceId == 1458767429 then
         end)
     end)
     elseif game.PlaceId == 6846458508 then
-    getgenv().CandyFarm = true --Change to false to turn off sped
+lib = loadstring(game:HttpGet("https://raw.githubusercontent.com/TheNuggetEater05/ekaMiffutSmodnaR/main/EssentialLib", true))()
+
+local main = lib:CreateMain({title = "PinPoint Hub", desc = "coolio hub :sunglasses:"})
+
+
+local tab2 = main:CreateTab({image = "http://www.roblox.com/asset/?id=6022668945", title = "Misc", desc = "Main stuff"})
+local tab3 = main:CreateTab({image = "http://www.roblox.com/asset/?id=6026568198", title = "Home", desc = " ", ismain = true})
+
+
+tab2:AddButton({text = "farm candice in aut", side = "yeah cool", callback = function()
+print("Executed")
+getgenv().CandyFarm = true --Change to false to turn off sped
 spawn(function()
 while CandyFarm do wait()
 pcall(function()
@@ -41,8 +52,7 @@ end
 end)
 end
 end)
-end
-
+end})
 end)
-
+end
     
